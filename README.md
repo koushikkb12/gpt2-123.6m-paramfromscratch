@@ -81,12 +81,31 @@ Both the pre-trained base model and the conversational fine-tuned model have bee
 └── checkpoints/          # Local directory for model weights and logs
 ```
 
-## Setup & Requirements
+## Setup & Usage
 
-Install the dependencies:
+**1. Install the dependencies:**
 ```bash
 pip install -r requirements.txt
 ```
+
+**2. Pre-train the model:**
+To train the base model on OpenWebText from scratch (this may take up to 24 hours on a T4 GPU):
+```bash
+python train_pretrain.py
+```
+
+**3. Fine-tune the model:**
+To fine-tune the pre-trained checkpoints into a conversational assistant using OpenAssistant (oasst1):
+```bash
+python train_finetune.py
+```
+
+**4. Chat with the model:**
+To interact with your fine-tuned model via terminal, you can run the chat script. It will automatically load `checkpoints/finetune/best.pt` by default:
+```bash
+python chat.py
+```
+
 
 ## Acknowledgments
 

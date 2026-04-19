@@ -1,0 +1,6 @@
+torch>=2.0
+tiktoken
+datasets
+transformers
+huggingface_hub
+tqdm

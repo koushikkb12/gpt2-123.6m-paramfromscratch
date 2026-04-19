@@ -2,6 +2,8 @@
 
 This repository contains the training pipeline, configuration, and insights from building and training a 124M parameter GPT-2 model completely from scratch using PyTorch. 
 
+The model weights can be accessed at https://huggingface.co/koushikkb12/gpt2-123.6m-paramfromscratch
+
 The project encompasses two main phases:
 1. **Pre-training**: Training the base causal language model on the OpenWebText dataset.
 2. **Fine-tuning**: Adapting the model for conversational interactions using the OpenAssistant (OASST1) dataset.
